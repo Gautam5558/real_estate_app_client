@@ -1,0 +1,166 @@
+.singleResidency {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+
+
+}
+
+
+.rTop {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+
+.imgContainer {
+    position: relative;
+    width: 100%;
+
+
+}
+
+
+
+.mainImg {
+
+    width: 100%;
+    max-height: 35rem;
+    object-fit: cover;
+    border-radius: 1rem;
+
+}
+
+
+.rBottom {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.bRight {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+@media screen and (max-width:768px) {
+
+    .mainImg {
+        width: 100%;
+    }
+
+    .rBottom {
+        flex-direction: column;
+    }
+
+    .bRight {
+        width: 70%;
+
+    }
+}
+
+.bLeft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.dataContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.facilities {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.facility {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.fIcon {
+    color: #1f3e72;
+    font-size: 1.2rem;
+}
+
+.fText {
+    color: black;
+    font-weight: 500;
+}
+
+.rDesc {
+
+    font-size: 0.8rem;
+    color: gray;
+}
+
+
+.rButton {
+    padding: 10px 20px;
+    font-weight: 500;
+    color: white;
+    background: var(--blue-gradient);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 300ms ease-in;
+
+}
+
+.rButton:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.booked {
+    border: 1px solid red;
+    color: red;
+    background: white;
+}
+
+.address {
+    color: black;
+    font-size: 1rem;
+}
+
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.sliderBtnPrev {
+    position: absolute;
+    font-size: 5rem;
+    left: 0;
+    color: orange;
+    cursor: pointer;
+}
+
+.sliderBtnNext {
+    position: absolute;
+    font-size: 5rem;
+    right: 0;
+    color: orange;
+    cursor: pointer;
+}

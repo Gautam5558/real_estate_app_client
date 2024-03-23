@@ -1,0 +1,54 @@
+.bookingModal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mContainer {
+    background-color: white;
+    width: max-content;
+    height: max-content;
+    border-radius: 5px;
+    padding: 20px;
+    color: black;
+    position: relative;
+    z-index: 99;
+}
+
+.mHeading {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 1.2rem;
+    color: red;
+    cursor: pointer;
+}
+
+.modalButton {
+    background: var(--blue-gradient);
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.modalButton:hover {
+    cursor: pointer;
+    background: #1f3e72;
+}

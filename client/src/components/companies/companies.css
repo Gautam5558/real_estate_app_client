@@ -1,0 +1,28 @@
+.companies {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+img {
+    width: 150px;
+}
+
+@media screen and (max-width:648px) {
+    img {
+        width: 80px;
+    }
+}
+
+
+@media screen and (max-width:400px) {
+
+    .companies {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+
+
+}

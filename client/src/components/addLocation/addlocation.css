@@ -1,0 +1,46 @@
+.locationWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.locationForm {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.addLocation {
+    flex: 1;
+}
+
+
+.mantine-Select-dropdown {
+    z-index: 10;
+    background-color: white;
+}
+
+.map {
+    flex: 1;
+    width: 100%;
+}
+
+
+.nextStep {
+    border: none;
+    background-color: #228be6;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    align-self: center;
+}
+
+
+.nextStep:hover {
+    cursor: pointer;
+    background-color: #1f3e72;
+}

@@ -1,0 +1,62 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+    border-top: 0.5px solid rgba(0, 0, 0, 0.148);
+    width: 80%;
+    margin: auto;
+    padding-bottom: 50px;
+
+}
+
+.fContainer {
+    width: 1200px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.fText {
+    color: #8c8b8b;
+    font-size: 0.9rem;
+}
+
+.fRight {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.fRight>h2 {
+    margin: 0;
+}
+
+.fLinks {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 500;
+}
+
+@media screen and (max-width:768px) {
+    .fContainer {
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .fLeft {
+        align-items: center;
+    }
+}

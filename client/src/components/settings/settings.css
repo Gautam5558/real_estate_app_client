@@ -1,0 +1,146 @@
+.settings {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.sWrapper {
+    min-width: 40%;
+    height: max-content;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    position: relative;
+}
+
+.sDetails {
+
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+.sUploading {
+    border: none;
+    padding: 10px;
+    background: #2ea44f;
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+
+.sUploading:hover {
+    background: #2c974b;
+    cursor: pointer;
+}
+
+.sUploading:disabled {
+    cursor: not-allowed;
+}
+
+.sImage {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+.imageDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nameDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.sLabel {
+    font-size: 1rem;
+    color: black;
+}
+
+.sUsername {
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: black;
+    border: 1px solid #1f3e72;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.saveChanges {
+    padding: 10px;
+    color: white;
+    background: var(--blue-gradient);
+    font-weight: 500;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.saveChanges:hover {
+    cursor: pointer;
+    background: #1f3e72;
+}
+
+.saveChanges:disabled {
+    cursor: not-allowed;
+}
+
+.iText {
+    font-size: 12px;
+    color: black;
+}
+
+.closeSettings {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.8rem;
+    border: 2px solid #228be6;
+    border-radius: 5px;
+    padding: 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    cursor: pointer;
+}
+
+@media screen and (max-width:748px) {
+    .sDetails {
+
+        flex-direction: column;
+    }
+
+    .nameDetails {
+        border-top: 1px solid lightgray;
+        padding-top: 1.2rem;
+    }
+}
