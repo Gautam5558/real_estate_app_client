@@ -33,7 +33,7 @@ const Heart = ({ residencyId, card }) => {
 
     try {
       const { data } = await axios.put(
-        "http://localhost:3000/api/users/favorites/" + residencyId,
+        import.meta.env.VITE_BASE_URL + "api/users/favorites/" + residencyId,
         {},
         { withCredentials: true }
       );

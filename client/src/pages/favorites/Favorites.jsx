@@ -10,7 +10,7 @@ import { InfinitySpin } from "react-loader-spinner";
 
 const Favorites = () => {
   const { data, isLoading, error, refetch } = useFetch(
-    "http://localhost:3000/api/residencies"
+    import.meta.env.VITE_BASE_URL + "api/residencies"
   );
 
   const [search, setSearch] = useState("");
