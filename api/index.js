@@ -29,7 +29,7 @@ mongoose.connection.on("disconnected", (req, res) => {
   console.log("mongodb disconnected");
 });
 
-app.listen("3000", async (req, res) => {
+app.listen(process.env.PORT, async (req, res) => {
   await connection();
   console.log("server is running");
 });
