@@ -10,7 +10,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://real-estate-app-client.vercel.app/",
+    origin: "https://real-estate-app-client.vercel.app",
     credentials: true,
   })
 );
